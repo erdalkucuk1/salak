@@ -9,14 +9,20 @@
 ## Klasör Yapısı
 - lib/
   ├── core/
-  │   ├── constants/
-  │   ├── error/
-  │   ├── extensions/
-  │   ├── models/
-  │   ├── pages/
-  │   ├── providers/
-  │   ├── utils/
-  │   └── widgets/
+  │   ├── base/         # Temel sınıflar
+  │   ├── constants/    # Sabitler
+  │   ├── error/        # Hata yönetimi
+  │   ├── extensions/   # Uzantılar
+  │   ├── init/         # Başlatma işlemleri
+  │   ├── lang/         # Dil dosyaları
+  │   ├── models/       # Veri modelleri
+  │   ├── network/      # Ağ işlemleri
+  │   ├── pages/        # Sayfalar
+  │   ├── providers/    # Durum yönetimi
+  │   ├── routes/       # Yönlendirmeler
+  │   ├── theme/        # Tema yapılandırması
+  │   ├── utils/        # Yardımcı fonksiyonlar
+  │   └── widgets/      # Yeniden kullanılabilir widgetlar
   └── main.dart
 
 ## Hata Yönetimi
@@ -72,10 +78,34 @@
 - Loglar zaman damgası içermelidir
 - Loglar kategorize edilmelidir
 
-## Tema
-- Tema merkezi olarak yönetilmelidir
-- Material 3 kullanılmalıdır
-- Tutarlı renk şeması olmalıdır
+## Dil Yönetimi
+- Çoklu dil desteği zorunludur
+- Dil dosyaları JSON formatında olmalıdır
+- Varsayılan dil Türkçe olmalıdır
+- Dil değişimi anlık olmalıdır
+- Dil tercihi cihazda saklanmalıdır
+
+## Tema Yönetimi
+- Açık/koyu tema desteği zorunludur
+- Tema renkleri constants'da tanımlanmalıdır
+- Tema değişimi anlık olmalıdır
+- Tema tercihi cihazda saklanmalıdır
+
+## Network Yönetimi
+- Tüm istekler interceptor üzerinden geçmelidir
+- İstek zaman aşımı 30 saniye olmalıdır
+- Offline mod desteklenmelidir
+- Cache mekanizması kullanılmalıdır
+
+## Cache Yönetimi
+- Önbellek süresi tanımlanmalıdır
+- Önbellek temizleme mekanizması olmalıdır
+- Kritik veriler şifreli saklanmalıdır
+
+## Base Sınıflar
+- Tüm modeller BaseModel'den türemelidir
+- Tüm sayfalar BaseView'dan türemelidir
+- Tüm servisler BaseService'den türemelidir
 
 ## Extensions
 - Context extension'ları kullanılmalıdır
