@@ -1,0 +1,40 @@
+{
+  "core": {
+    "app": {
+      "name": "Core Module",
+      "title": "Home Page"
+    },
+    "buttons": {
+      "errorTest": "Error Test",
+      "aiAnalysis": "AI Analysis",
+      "theme": {
+        "light": "Light Theme",
+        "dark": "Dark Theme"
+      },
+      "language": {
+        "tr": "Switch to Turkish",
+        "en": "Switch to English"
+      },
+      "details": "Details"
+    },
+    "device": {
+      "type": "Device Type",
+      "desktop": "Desktop",
+      "tablet": "Tablet",
+      "mobile": "Mobile"
+    },
+    "loading": {
+      "text": "Processing..."
+    },
+    "form": {
+      "success": "Form submitted successfully"
+    },
+    "error": {
+      "history": "Error History",
+      "analysis": {
+        "title": "AI Error Analysis",
+        "description": "AI format for error analysis has been prepared and copied to clipboard.\nYou can get detailed solution suggestions by sending this format to an AI assistant."
+      }
+    }
+  }
+} 

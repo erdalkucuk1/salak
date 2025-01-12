@@ -1,0 +1,90 @@
+# Core Modül Kuralları
+
+## Genel Kurallar
+- Core modül diğer modüller olmadan tek başına çalışmalıdır
+- Core modülde sadece bir ana sayfa (Home) olmalıdır
+- Gereksiz dosya ve klasör yapıları oluşturulmamalıdır
+- Core modül minimum bağımlılıkla çalışmalıdır
+
+## Klasör Yapısı
+- lib/
+  ├── core/
+  │   ├── constants/
+  │   ├── error/
+  │   ├── extensions/
+  │   ├── models/
+  │   ├── pages/
+  │   ├── providers/
+  │   ├── utils/
+  │   └── widgets/
+  └── main.dart
+
+## Hata Yönetimi
+- Tüm hatalar merkezi olarak yönetilmelidir
+- Hatalar detaylı bilgi içermelidir
+- Hatalar hem dialog hem bildirim olarak gösterilmelidir
+- Hata geçmişi tutulmalıdır
+- Hatalar AI analizi için uygun formatta olmalıdır
+- Hata detayları kopyalanabilir olmalıdır
+- Her hata için AI analizi yapılabilmelidir
+- Hatalar JSON formatında yapılandırılmış olmalıdır
+- Hata detayları emoji ile zenginleştirilmelidir
+- Stack trace bilgisi ilk 5 satır olarak eklenmelidir
+- Her hata için AI çözüm önerileri sunulmalıdır
+- Hata geçmişi ayrı bir sayfada listelenmelidir
+- Hatalar kronolojik sırayla gösterilmelidir
+- Her hata için kopyalama ve AI analiz butonu olmalıdır
+
+## Widget Yönetimi
+- Widget'lar modüler ve tekrar kullanılabilir olmalıdır
+- Responsive tasarım desteklenmelidir
+- Base widget'lar kullanılmalıdır
+- Loading durumları yönetilmelidir
+- Her widget kendi içinde bağımsız olmalıdır
+- Widget'lar arası iletişim provider üzerinden yapılmalıdır
+- Her widget için örnek kullanım eklenmelidir
+- Widget'lar tablet ve desktop için optimize edilmelidir
+
+## State Yönetimi
+- Provider kullanılmalıdır
+- State değişiklikleri merkezi olarak yönetilmelidir
+
+## Bildirim Yönetimi
+- Bildirimler merkezi olarak yönetilmelidir
+- Farklı bildirim tipleri desteklenmelidir (success, error, warning, info)
+- Bildirimler otomatik kapanabilmelidir
+- Bildirimlerde aksiyon butonları olabilmelidir
+- Bildirimler üst üste gösterilebilmelidir
+- Bildirimler animasyonlu olmalıdır
+- Bildirimler kopyalanabilir olmalıdır
+- Bildirimler için AI analizi yapılabilmelidir
+- Bildirimler responsive olmalıdır
+
+## Validasyon
+- Form validasyonları merkezi olarak yönetilmelidir
+- Validasyon hataları detaylı olmalıdır
+
+## Logger
+- Debug modda detaylı loglar tutulmalıdır
+- Log seviyeleri (debug, info, warning, error) kullanılmalıdır
+- Loglar emoji ile görselleştirilmelidir
+- Loglar AI analizi için formatlanmalıdır
+- Loglar zaman damgası içermelidir
+- Loglar kategorize edilmelidir
+
+## Tema
+- Tema merkezi olarak yönetilmelidir
+- Material 3 kullanılmalıdır
+- Tutarlı renk şeması olmalıdır
+
+## Extensions
+- Context extension'ları kullanılmalıdır
+- Utility extension'lar eklenmelidir
+
+## Utilities
+- Screen utils kullanılmalıdır
+- Validators kullanılmalıdır
+- Error handler kullanılmalıdır
+
+## Testing
+- Core modül test edilebilir olmalıdır

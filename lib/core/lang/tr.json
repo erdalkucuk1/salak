@@ -1,0 +1,40 @@
+{
+  "core": {
+    "app": {
+      "name": "Core Modül",
+      "title": "Ana Sayfa"
+    },
+    "buttons": {
+      "errorTest": "Hata Test",
+      "aiAnalysis": "AI Analizi",
+      "details": "Detaylar",
+      "theme": {
+        "light": "Açık Tema",
+        "dark": "Koyu Tema"
+      },
+      "language": {
+        "tr": "Türkçe'ye geç",
+        "en": "Switch to English"
+      }
+    },
+    "device": {
+      "type": "Cihaz Tipi",
+      "desktop": "Masaüstü",
+      "tablet": "Tablet",
+      "mobile": "Telefon"
+    },
+    "loading": {
+      "text": "İşleminiz yapılıyor..."
+    },
+    "form": {
+      "success": "Form başarıyla gönderildi"
+    },
+    "error": {
+      "history": "Hata Geçmişi",
+      "analysis": {
+        "title": "AI Hata Analizi",
+        "description": "Hata analizi için AI formatı hazırlandı ve panoya kopyalandı.\nBu formatı bir AI asistanına ileterek detaylı çözüm önerileri alabilirsiniz."
+      }
+    }
+  }
+} 
